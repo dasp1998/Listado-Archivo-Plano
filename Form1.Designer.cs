@@ -39,6 +39,8 @@ namespace Listado_Archivo_Plano
             this.listBoxPrimerP = new System.Windows.Forms.ListBox();
             this.listBoxParcialS = new System.Windows.Forms.ListBox();
             this.listBoxPacialT = new System.Windows.Forms.ListBox();
+            this.buttonArreglo = new System.Windows.Forms.Button();
+            this.listBoxResultado = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // buttonCarga
@@ -63,33 +65,24 @@ namespace Listado_Archivo_Plano
             // 
             // buttonPrimero
             // 
-            this.buttonPrimero.Location = new System.Drawing.Point(56, 266);
+            this.buttonPrimero.Location = new System.Drawing.Point(12, 332);
             this.buttonPrimero.Name = "buttonPrimero";
-            this.buttonPrimero.Size = new System.Drawing.Size(94, 59);
-            this.buttonPrimero.TabIndex = 2;
-            this.buttonPrimero.Text = "Primer Parcial";
-            this.buttonPrimero.UseVisualStyleBackColor = true;
-            this.buttonPrimero.Click += new System.EventHandler(this.buttonPrimero_Click);
+            this.buttonPrimero.Size = new System.Drawing.Size(75, 23);
+            this.buttonPrimero.TabIndex = 13;
             // 
             // button1Segundo
             // 
-            this.button1Segundo.Location = new System.Drawing.Point(56, 348);
+            this.button1Segundo.Location = new System.Drawing.Point(12, 394);
             this.button1Segundo.Name = "button1Segundo";
-            this.button1Segundo.Size = new System.Drawing.Size(94, 54);
-            this.button1Segundo.TabIndex = 3;
-            this.button1Segundo.Text = "Segundo Parcial";
-            this.button1Segundo.UseVisualStyleBackColor = true;
-            this.button1Segundo.Click += new System.EventHandler(this.button1Segundo_Click);
+            this.button1Segundo.Size = new System.Drawing.Size(75, 23);
+            this.button1Segundo.TabIndex = 12;
             // 
             // buttonTercero
             // 
-            this.buttonTercero.Location = new System.Drawing.Point(56, 427);
+            this.buttonTercero.Location = new System.Drawing.Point(12, 290);
             this.buttonTercero.Name = "buttonTercero";
-            this.buttonTercero.Size = new System.Drawing.Size(94, 49);
-            this.buttonTercero.TabIndex = 4;
-            this.buttonTercero.Text = "Tercer Parcial";
-            this.buttonTercero.UseVisualStyleBackColor = true;
-            this.buttonTercero.Click += new System.EventHandler(this.buttonTercero_Click);
+            this.buttonTercero.Size = new System.Drawing.Size(75, 23);
+            this.buttonTercero.TabIndex = 11;
             // 
             // textBoxContenido
             // 
@@ -136,11 +129,31 @@ namespace Listado_Archivo_Plano
             this.listBoxPacialT.Size = new System.Drawing.Size(421, 144);
             this.listBoxPacialT.TabIndex = 9;
             // 
+            // buttonArreglo
+            // 
+            this.buttonArreglo.Location = new System.Drawing.Point(578, 505);
+            this.buttonArreglo.Name = "buttonArreglo";
+            this.buttonArreglo.Size = new System.Drawing.Size(185, 35);
+            this.buttonArreglo.TabIndex = 10;
+            this.buttonArreglo.Text = "button1";
+            this.buttonArreglo.UseVisualStyleBackColor = true;
+            this.buttonArreglo.Click += new System.EventHandler(this.buttonArreglo_Click);
+            // 
+            // listBoxResultado
+            // 
+            this.listBoxResultado.ItemHeight = 20;
+            this.listBoxResultado.Location = new System.Drawing.Point(1039, 450);
+            this.listBoxResultado.Name = "listBoxResultado";
+            this.listBoxResultado.Size = new System.Drawing.Size(120, 84);
+            this.listBoxResultado.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1284, 690);
+            this.ClientSize = new System.Drawing.Size(1229, 698);
+            this.Controls.Add(this.listBoxResultado);
+            this.Controls.Add(this.buttonArreglo);
             this.Controls.Add(this.listBoxPacialT);
             this.Controls.Add(this.listBoxParcialS);
             this.Controls.Add(this.listBoxPrimerP);
@@ -170,6 +183,8 @@ namespace Listado_Archivo_Plano
         private System.Windows.Forms.ListBox listBoxPrimerP;
         private System.Windows.Forms.ListBox listBoxParcialS;
         private System.Windows.Forms.ListBox listBoxPacialT;
+        private System.Windows.Forms.Button buttonArreglo;
+        private System.Windows.Forms.ListBox listBoxResultado;
     }
 }
 
